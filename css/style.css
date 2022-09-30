@@ -177,7 +177,9 @@ body {
 
 
 @media (max-width: 750px) {
-
+    .container-big {
+        width: 750px;
+    }
     .body__privatbank,
     .body__monobank,
     .body__paypal {

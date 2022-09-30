@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c1cbcf;
+}
+
+.notify {
+    position: fixed;
+    z-index: 999;
+    bottom: 35px;
+    align-self: center;
+    width: 100%;
+    height: 0px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    transition: height .2s;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+
+.active {
+    height: 65px;
+}
+
+.container-big {
+    justify-self: center;
+    width: 1240px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+}
+
+.header__logo {
+    width: 200px;
+    height: 200px;
+}
+
+.header__title {
+    max-width: 450px;
+    padding-top: 10px;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 48px;
+}
+
+
+.content {}
+
+.content__background {
+    padding-top: 40px;
+    width: 100%;
+}
+
+.background__img {
+
+    width: 100%;
+}
+
+.content__title {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.content__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    row-gap: 40px;
+}
+
+.body__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.body__copy {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 5px;
+}
+
+.body__copy:hover {
+    cursor: pointer;
+    box-shadow: rgb(100, 100, 100) 0px 20px 30px -10px;
+    transition: all 0.5s ease 0s;
+}
+
+.body__copy p {
+    color: rgb(99, 99, 99);
+    text-align: center;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.body__privatbank {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.body__monobank {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.body__paypal {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.big__image {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(100, 99, 99);
+}
+
+.big__image:hover {
+    box-shadow: rgb(100, 100, 100) 0px 20px 30px -10px;
+    transition: all 0.5s ease 0s;
+}
+
+.medium__image {
+    width: 308px;
+    height: 82px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+.footer__logo {
+    height: 100px;
+    width: 100px;
+}
+
+.podolend {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+@media (max-width: 750px) {
+
+    .body__privatbank,
+    .body__monobank,
+    .body__paypal {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .body__links {
+        flex-direction: row;
+    }
+    .content__title{
+        text-align: center;
+        font-size: 40px;
+    }
+}
